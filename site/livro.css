@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(237, 221, 190);
+    
+}
+h1{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 600%;
+    font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.capaPDF{
+    border-style: double;
+    border-color: rgb(99, 69, 10);
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    width: 30%;
+    height: 60%;
+    background-color: rgb(99, 69, 10);
+    box-shadow: 5px 5px 5px rgb(99, 69, 10);
+}
+.capaPDF:hover{
+    transition: 0.2s;
+    opacity: 90%;
+    width: 30.2%;
+    height: 60.4%;
+}
+.TxtLivros{
+    margin-left: 20%;
+    font-size: 200%;
+    font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
