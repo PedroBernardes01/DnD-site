@@ -1,0 +1,9 @@
+{
+    "editor.codeLens": false,
+    "editor.colorDecorators": true,
+    "editor.overviewRulerBorder": true,
+    "editor.scrollbar.horizontal": "auto",
+    "editor.smoothScrolling": false,
+    "editor.trimAutoWhitespace": true,
+    "editor.minimap.enabled": false
+}
