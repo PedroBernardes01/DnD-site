@@ -1,28 +1,37 @@
-body{
-    padding: 0px;
-    margin: 0px;
+@media (min-width: 700px) {
+  /*Header*/
+    body{
+      padding: 0px;
+      margin: 0px;
+      background-color: rgb(239, 197, 118);
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: rgb(228, 200, 148);
+      border-bottom-style: groove;
+      border-color: rgb(123, 89, 26)wheat;
+    }
+    .topnav a {
+      float: left;
+      color: rgb(73, 48, 0);
+      font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+      text-align: center;
+      padding: 1% 1%;
+      text-decoration: none;
+      font-size: 350%;
+    }
+    .topnav a:hover {
+      background-color: rgb(219, 168, 74);
+    }
+    img#icon{
+      width: 40%;
+      height: 40%;
+    }
+  /*Aside*/
+    .Text{
+      display: inline;
+      color: rgb(73, 48, 0);
+      font-size: 350%;
+      font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+    }
 }
-.topnav {
-    overflow: hidden;
-    background-color: rgb(228, 200, 148);
-    border-bottom-style: groove;
-    border-color: rgb(123, 89, 26)wheat;
-  }
-  
-  .topnav a {
-    float: left;
-    color: rgb(73, 48, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
-    text-align: center;
-    padding: 1% 1%;
-    text-decoration: none;
-    font-size: 350%;
-  }
-  
-  .topnav a:hover {
-    background-color: rgb(219, 168, 74);
-  }
-  img#icon{
-    width: 40%;
-    height: 40%;
-  }
