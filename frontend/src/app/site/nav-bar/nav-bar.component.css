@@ -1,0 +1,31 @@
+mat-sidenav-container{
+    position: absolute;
+    left: 0;
+    background: url(/assets/faisca.gif);
+    height: 100%;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    width: 100%;
+    height: 60px;
+    font-size: var(--tam3);
+    font-family: var(--family);
+    border-radius: 0px;
+    font-weight: 500;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.prim{
+    background-color: var(--prim);
+    color: var(--sec);
+}
+.sec{
+    color: var(--prim);
+    background-color: var(--sec);
+}

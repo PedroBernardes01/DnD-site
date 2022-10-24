@@ -1,0 +1,25 @@
+i{
+    font-size: var(--tam4);
+}
+mat-toolbar{
+    font-family: var(--family);
+    display: flex;
+    flex-direction: row;
+    background-color: var(--sec);
+    height: 124px;
+    color: var(--prim);
+    padding-left: 20px;
+}
+button{
+    margin-left: 10px;
+    color: var(--prim);
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}

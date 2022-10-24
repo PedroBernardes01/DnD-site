@@ -1,0 +1,22 @@
+*{
+    transition: 500ms;
+}
+html, body {
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --prim: #F47201;
+    --sec: #171717;
+    --tam1: 0.5em;
+    --tam2: 1em;
+    --tam3: 1.3em;
+    --tam4: 3em;
+}
+button{
+    border: 0;
+    padding: 0;
+    background: none;
+}
