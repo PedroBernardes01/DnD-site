@@ -1,11 +1,10 @@
 mat-sidenav-container{
-    position: absolute;
+    width: 70px;
+    position: fixed;
     left: 0;
-    background: url(/assets/faisca.gif);
+    background-color: var(--prim2);
     height: 100%;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 5;
 }
 button{
     width: 100%;
@@ -15,17 +14,49 @@ button{
     border-radius: 0px;
     font-weight: 500;
 }
+i{
+    font-size: var(--tam3);
+}
 img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 .prim{
-    background-color: var(--prim);
+    background-color: var(--prim2);
     color: var(--sec);
 }
+
+.prim span{
+    display: none;
+}
+.sec span{
+    display: none;
+}
 .sec{
+    display: none;
     color: var(--prim);
     background-color: var(--sec);
+}
+mat-sidenav-container:hover{
+    width: 400px;
+    background: url(/assets/faisca.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+mat-sidenav-container:hover .prim{
+    background-color: var(--prim);
+}
+mat-sidenav-container:hover button span{
+    display: inline-block;
+}
+
+mat-sidenav-container:hover i{
+    margin-right: 5px;
+}
+
+mat-sidenav-container:hover img{
+    width: 100px;
+    height: 100px;
 }

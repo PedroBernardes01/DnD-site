@@ -1,9 +1,9 @@
-<mat-sidenav-container [style]="tst">
-    <button class="img"><img src="/assets/icon.png" alt=""></button>
-    <button class="prim">Pdfs</button>
-    <button class="sec">D&D 5e</button>
-    <button class="prim">Mesa</button>
-    <button class="sec"><i class="material-icons">add</i> Criar</button>
-    <button class="prim">Personagens</button>
-    <button class="sec"><i class="material-icons">add</i> Criar</button>
+<mat-sidenav-container>
+    <button class="img" (click)="goto('/')"><img src="/assets/icon.png" alt=""></button>
+    <button class="prim" (click)="dropdown(0)" mat-button><i class="material-icons">library_books</i><span>Pdfs</span></button>
+    <button class="sec" (click)="goto('/PDFS')" [style]="drop[0]" mat-button><i class="material-icons">library_books</i><span>D&D 5e</span></button>
+    <button class="prim" (click)="dropdown(1)" mat-button><i class="material-icons">group</i><span>Mesa</span></button>
+    <button class="sec" [style]="drop[1]" mat-button><i class="material-icons">add</i><span>Novo</span></button>
+    <button class="prim" (click)="dropdown(2)" mat-button><i class="material-icons">person</i><span>Personagens</span></button>
+    <button class="sec" [style]="drop[2]" mat-button><i class="material-icons">add</i><span>Novo</span></button>
 </mat-sidenav-container>

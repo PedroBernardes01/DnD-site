@@ -1,3 +1,5 @@
+@include angular-material-theme($theming-material-components-theme);
+
 *{
     transition: 500ms;
 }
@@ -8,12 +10,14 @@ html, body {
 }
 :root{
     --family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --prim: #F47201;
+    --prim: rgb(244, 114, 1);
+    --prim2: #ffbf00;
     --sec: #171717;
     --tam1: 0.5em;
     --tam2: 1em;
     --tam3: 1.3em;
-    --tam4: 3em;
+    --tam4: 2em;
+    --branco: #ffffff;
 }
 button{
     border: 0;

@@ -1,0 +1,25 @@
+<mat-toolbar id="back">
+    <div id="img"></div>
+    <mat-toolbar [style]="bordback" id="header">
+        <button mat-button (click)="select(0)">Guia do Mestre</button>
+        <button mat-button (click)="select(1)">Manual dos Monstros</button>
+        <button mat-button (click)="select(2)">Livro do jogador</button>
+    </mat-toolbar>
+    <div [ngSwitch]="swt" id="content" [style]="bordback">
+        <div *ngSwitchCase="0">
+            <h1>Guia do Mestre</h1>
+            <span>Tá pensando em uma campanha e tá com duvidas de como manusear a história? <br> este guia é perfeito para você, use de suas dicas e até mesmo histórias para te dar um caminho!</span>
+            <a href="/assets/pdfsdnd5e/GM.pdf" style="background: url(/assets/pdfsdnd5e/GMimg.png);background-repeat: no-repeat;background-size: cover;" target="_blank"></a>
+        </div>
+        <div *ngSwitchCase="1">
+            <h1>Manual dos Monstros</h1>
+            <span>Tá pensando em colocar um monstro para desafiar seus amigos? <br> recomento usar o mimico, mas você pode olhar uma opção melhor no Manual dos monstros!</span>
+            <a href="/assets/pdfsdnd5e/MM.pdf" style="background: url(/assets/pdfsdnd5e/MMimg.png);background-repeat: no-repeat;background-size: cover;" target="_blank"></a>
+        </div>
+        <div *ngSwitchCase="2">
+            <h1>Livro do jogador</h1>
+            <span>Precisa de um personagem pra ontem? <br> escolha sua classe a raça do jeito que deseja para seu personagem!</span>
+            <a href="/assets/pdfsdnd5e/LDJ.pdf" style="background: url(/assets/pdfsdnd5e/LDJimg.png);background-repeat: no-repeat;background-size: cover;" target="_blank"></a>
+        </div>
+    </div>
+</mat-toolbar>

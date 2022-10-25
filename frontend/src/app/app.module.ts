@@ -10,12 +10,16 @@ import { HeaderComponent } from './site/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './site/nav-bar/nav-bar.component';
 import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './site/home/home.component';
+import { PdfsComponent } from './site/pdfs/pdfs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent,
+    PdfsComponent
   ],
   imports: [
     BrowserModule,
