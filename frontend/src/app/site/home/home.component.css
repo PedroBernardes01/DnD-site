@@ -15,6 +15,7 @@ mat-toolbar{
     padding-bottom: 30px;
     background-color: var(--prim);
     box-shadow: 0px -9px 50px #000000;
+    min-height: 100%;
 }
 mat-toolbar-row{
     height: max-content;

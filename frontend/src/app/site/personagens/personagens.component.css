@@ -1,15 +1,30 @@
-body{
+#img{
+    padding-top: 124px;
+    width: 100%;
+    height: 300px;
+    background: url(/assets/backCP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+form{
+    box-shadow: 0px -9px 50px #000000;
     height: max-content;
-    width: calc(100% - 70px);
+    width: calc(100% - 120px);
     padding: 0px;
     padding-top: 90px;
+    padding-left: 50px;
     margin-left: 70px;
     display: flex;
     flex-direction: column; 
     background-color: var(--prim);
 }
+mat-stepper{
+    background: none;
+}
 mat-toolbar{
-    height: 100px;
+    height: max-content;
+    min-height: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
     background: none;
@@ -17,4 +32,20 @@ mat-toolbar{
     flex-direction: row;
     align-items: center;
 }
-
+h1{
+    font-size: var(--tam3);
+    font-family: var(--family);
+}
+h2{
+    font-family: var(--family);
+    font-size: var(--tam2);
+}
+.input{
+    font-family: var(--family);
+    font-size: var(--tam2);
+    width: 300px;
+    margin-right: 50px;
+}
+.Number{
+    width: 150px;
+}

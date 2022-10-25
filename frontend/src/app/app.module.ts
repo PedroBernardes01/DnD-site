@@ -5,6 +5,8 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './site/header/header.component';
@@ -26,11 +28,13 @@ import { PersonagensComponent } from './site/personagens/personagens.component';
   ],
   imports: [
     BrowserModule,
+    MatStepperModule,
     AppRoutingModule,
     MatSidenavModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
+    MatSelectModule,
     MatToolbarModule,
     MatIconModule
   ],

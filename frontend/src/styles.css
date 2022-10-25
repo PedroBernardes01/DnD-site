@@ -24,3 +24,9 @@ button{
     padding: 0;
     background: none;
 }
+.buttonBun{
+    border: 1px solid var(--sec);
+    min-height: 60px;
+    color: var(--sec);
+    font-size: var(--tam2);
+}

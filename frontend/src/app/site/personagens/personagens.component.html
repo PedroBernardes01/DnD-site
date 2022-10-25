@@ -1,14 +1,137 @@
 <body>
+    <div id="img"></div>
     <form>
         <mat-toolbar>
             <h1>Criação de Personagem</h1>
         </mat-toolbar>
-        <mat-toolbar>
-            <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Nome</mat-label>
-                <input matInput placeholder="Ex. Robertinho" value="">
-            </mat-form-field>     
-        </mat-toolbar>
+        <div [ngSwitch]="table">
+            <div *ngSwitchCase="0">
+                <mat-toolbar>
+                    <h2>Informções Básicas</h2>
+                </mat-toolbar>
+                <mat-toolbar>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Nome</mat-label>
+                        <input matInput maxlength="20" placeholder="Ex. Robertinho" value="">
+                    </mat-form-field> 
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Selecione sua Classe</mat-label>
+                        <mat-select name="class">
+                            <mat-option [value]="0">Bárbaro</mat-option>
+                            <mat-option [value]="1">Bardo</mat-option>
+                            <mat-option [value]="2">Bruxo</mat-option>
+                            <mat-option [value]="3">Clérigo</mat-option>
+                            <mat-option [value]="4">Druida</mat-option>
+                            <mat-option [value]="5">Feiticeiro</mat-option>
+                            <mat-option [value]="6">Guerreiro</mat-option>
+                            <mat-option [value]="7">Ladino</mat-option>
+                            <mat-option [value]="8">Mago</mat-option>
+                            <mat-option [value]="9">Monge</mat-option>
+                            <mat-option [value]="10">Paladino</mat-option>
+                            <mat-option [value]="11">Patrulheiro</mat-option>                
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Selecione sua Raça</mat-label>
+                        <mat-select name="class">
+                            <mat-option [value]="0">Anão</mat-option>
+                            <mat-option [value]="1">Elfo</mat-option>
+                            <mat-option [value]="2">Halfling</mat-option>
+                            <mat-option [value]="3">Humano</mat-option>
+                            <mat-option [value]="4">Draconato</mat-option>
+                            <mat-option [value]="5">Gnomo</mat-option>
+                            <mat-option [value]="6">Meio-Elfo</mat-option>
+                            <mat-option [value]="7">Meio-Orc</mat-option>
+                            <mat-option [value]="8">Tiefling</mat-option>              
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Selecione sua Tendência</mat-label>
+                        <mat-select name="class">
+                            <mat-option [value]="0">Leal Bom</mat-option>
+                            <mat-option [value]="1">Neutro Bom</mat-option>
+                            <mat-option [value]="2">Caótico Bom</mat-option>
+                            <mat-option [value]="3">Leal Neutro</mat-option>
+                            <mat-option [value]="4">Neutro</mat-option>
+                            <mat-option [value]="5">Caótico Neutro</mat-option>
+                            <mat-option [value]="6">Leal Mal</mat-option>
+                            <mat-option [value]="7">Mal</mat-option>
+                            <mat-option [value]="8">Caótico Mal</mat-option>              
+                        </mat-select>
+                    </mat-form-field>
+                </mat-toolbar>
+                <mat-toolbar>
+                    <h2>Modificadores</h2>
+                </mat-toolbar>
+                <mat-toolbar>
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Força</mat-label>
+                        <input matInput max="20" min="0" type="number" value="">
+                    </mat-form-field> 
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Destreza</mat-label>
+                        <input matInput max="20" min="0" type="number" value="">
+                    </mat-form-field> 
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Constituição</mat-label>
+                        <input matInput max="20" min="0" type="number" value="">
+                    </mat-form-field> 
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Inteligência</mat-label>
+                        <input matInput max="20" min="0" type="number" value="">
+                    </mat-form-field> 
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Carisma</mat-label>
+                        <input matInput max="20" min="0" type="number" value="">
+                    </mat-form-field>
+                </mat-toolbar>
+                <mat-toolbar>
+                    <h2>Características</h2>
+                </mat-toolbar>
+                <mat-toolbar>
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Idade</mat-label>
+                        <input matInput max="99999" min="0" maxlength="5" type="number" value="">
+                    </mat-form-field>
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Altura</mat-label>
+                        <input matInput max="99999" min="0" maxlength="5" type="number" value="">
+                    </mat-form-field>
+                    <mat-form-field class="input Number" appearance="fill">
+                        <mat-label>Peso</mat-label>
+                        <input matInput max="99999" min="0" maxlength="5" type="number" value="">
+                    </mat-form-field>
+                </mat-toolbar>
+                <mat-toolbar>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Olhos</mat-label>
+                        <input matInput maxlength="30" value="">
+                    </mat-form-field>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Pele</mat-label>
+                        <input matInput maxlength="30" value="">
+                    </mat-form-field>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Cabelos</mat-label>
+                        <input matInput maxlength="30" value="">
+                    </mat-form-field>
+                </mat-toolbar>
+                <mat-toolbar>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>Características Personalizadas</mat-label>
+                        <textarea matInput placeholder="Ex. Perna de pau, olho de vidro"></textarea>
+                    </mat-form-field>
+                    <mat-form-field class="input" appearance="fill">
+                        <mat-label>História do personagem</mat-label>
+                        <textarea matInput placeholder="Ex. Já teve um amor hospitalar"></textarea>
+                    </mat-form-field>
+                </mat-toolbar> 
+            </div>
+            <div *ngSwitchDefault>output2</div>
+            <mat-toolbar>
+                <button class="buttonBun" mat-button>Próximo</button>
+                <button class="buttonBun" mat-button>Voltar</button>
+            </mat-toolbar> 
+        </div>
     </form>
-    
 </body>
