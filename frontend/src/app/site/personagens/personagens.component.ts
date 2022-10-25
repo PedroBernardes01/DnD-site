@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, Validators} from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-personagens',
@@ -7,17 +7,15 @@ import {FormBuilder, Validators} from '@angular/forms';
   styleUrls: ['./personagens.component.css']
 })
 export class PersonagensComponent implements OnInit {
+  firstFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required],
+  });
+  secondFormGroup = this._formBuilder.group({
+    secondCtrl: ['', Validators.required],
+  });
+  isLinear = false;
 
-  table = 0
-
-  constructor() { }
-
-  sel(id: number): void{
-    if(id == 0){
-      this.table
-    }
-  }
-
+  constructor(private _formBuilder: FormBuilder) {}
   ngOnInit(): void {
   }
 }

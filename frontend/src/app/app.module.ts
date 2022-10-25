@@ -6,6 +6,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatStepperModule } from '@angular/material/stepper';
 
 import { AppComponent } from './app.component';
@@ -29,6 +30,8 @@ import { PersonagensComponent } from './site/personagens/personagens.component';
   imports: [
     BrowserModule,
     MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     MatSidenavModule,
     BrowserAnimationsModule,
