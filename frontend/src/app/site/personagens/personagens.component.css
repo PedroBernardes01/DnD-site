@@ -7,7 +7,7 @@
     background-size: cover;
     background-attachment: fixed;
 }
-form{
+body{
     box-shadow: 0px -9px 50px #000000;
     height: max-content;
     width: calc(100% - 120px);
@@ -18,9 +18,6 @@ form{
     display: flex;
     flex-direction: column; 
     background-color: var(--prim);
-}
-mat-stepper{
-    background: none;
 }
 mat-toolbar{
     height: max-content;
