@@ -20,6 +20,7 @@ body{
     background-color: var(--prim);
 }
 mat-toolbar{
+    color: var(--sec);
     height: max-content;
     min-height: 100px;
     padding-top: 20px;
@@ -28,6 +29,18 @@ mat-toolbar{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.collum{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Sel{
+    display: flex;
+    flex-direction: column;
+}
+mat-checkbox{
+    margin-right: 30px;
 }
 h1{
     font-size: var(--tam3);

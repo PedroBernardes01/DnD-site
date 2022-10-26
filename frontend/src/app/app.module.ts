@@ -8,12 +8,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './site/header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './site/nav-bar/nav-bar.component';
-import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './site/home/home.component';
 import { PdfsComponent } from './site/pdfs/pdfs.component';
 import { PersonagensComponent } from './site/personagens/personagens.component';
@@ -33,6 +34,7 @@ import { PersonagensComponent } from './site/personagens/personagens.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MatCheckboxModule,
     MatSidenavModule,
     BrowserAnimationsModule,
     MatButtonModule,

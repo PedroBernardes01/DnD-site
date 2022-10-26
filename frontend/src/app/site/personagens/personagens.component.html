@@ -75,7 +75,11 @@
                         <mat-form-field class="input Number" appearance="fill">
                             <mat-label>Constituição</mat-label>
                             <input matInput max="20" min="0" type="number" value="">
-                        </mat-form-field> 
+                        </mat-form-field>
+                        <mat-form-field class="input Number" appearance="fill">
+                            <mat-label>Sabedoria</mat-label>
+                            <input matInput max="20" min="0" type="number" value="">
+                        </mat-form-field>  
                         <mat-form-field class="input Number" appearance="fill">
                             <mat-label>Inteligência</mat-label>
                             <input matInput max="20" min="0" type="number" value="">
@@ -126,8 +130,55 @@
                             <textarea matInput placeholder="Ex. Já teve um amor hospitalar"></textarea>
                         </mat-form-field>
                     </mat-toolbar> 
+                    <mat-toolbar>
+                        <button mat-button (click)="Move(0)">Próximo</button>
+                    </mat-toolbar>
             </form>
         </div>
-        <div *ngSwitchDefault>output2</div>
+        <div *ngSwitchCase="1">
+            <mat-toolbar>
+                <h2>Escolha suas Proeficiências</h2>
+            </mat-toolbar>
+            <mat-toolbar>
+                <mat-checkbox value="" color="Accent">tst</mat-checkbox>
+                <mat-checkbox value="" color="Accent">tst</mat-checkbox>
+                <mat-checkbox value="" color="Accent">tst</mat-checkbox>
+            </mat-toolbar>
+            <mat-toolbar>
+                <h2>Equipamento</h2>
+            </mat-toolbar>
+            <mat-toolbar>
+                <mat-form-field class="input" appearance="fill">
+                    <mat-label>Selecione suas armas</mat-label>
+                    <mat-select name="class">
+                        <mat-option [value]="0">Um machado grande</mat-option>
+                        <mat-option [value]="1">Qualquer arma corpo a corpo</mat-option>            
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="input" appearance="fill">
+                    <mat-label>Selecione suas armas</mat-label>
+                    <mat-select name="class">
+                        <mat-option [value]="0">Dois machados de mão</mat-option>
+                        <mat-option [value]="1">Qualquer arma simples</mat-option>            
+                    </mat-select>
+                </mat-form-field>
+            </mat-toolbar>
+            <mat-toolbar>
+                Escolha suas Magias
+            </mat-toolbar>
+            <mat-toolbar class="collum">
+                <div class="Sel">
+                    <span>Title</span>
+                    <span>decription</span>
+                    <mat-checkbox value="" color="Accent">tst</mat-checkbox>
+                </div>
+            </mat-toolbar>
+            <mat-toolbar>
+                <button mat-button (click)="Move(1)">Voltar</button>
+                <button mat-button (click)="Move(0)">Próximo</button>
+            </mat-toolbar>
+        </div>
+        <div *ngSwitchCase="2">
+        </div>
     </div>
 </body>
