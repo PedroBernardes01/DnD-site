@@ -10,23 +10,23 @@
                         <h2>Informções Básicas</h2>
                     </mat-toolbar>
                     <mat-toolbar>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Selecione sua Classe</mat-label>
                             <mat-select name="class" [(ngModel)]="idClass" name="class">
                                 <mat-option *ngFor="let class of class" (click)="recmod(class.id)" [value]="class.id">{{ class.nome }}</mat-option>               
                             </mat-select>
                         </mat-form-field>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Selecione sua Raça</mat-label>
                             <mat-select name="class">
                                 <mat-option *ngFor="let race of race" (click)="reccarc(race.id)" [value]="race.id">{{ race.nome }}</mat-option>                          
                             </mat-select> 
                         </mat-form-field>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Nome</mat-label>
                             <input matInput [(ngModel)]="nome" name="nome" maxlength="20" placeholder="Ex. Robertinho" value="">
                         </mat-form-field>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Selecione sua Tendência</mat-label>
                             <mat-select [(ngModel)]="tendency" name="Tendência">
                                 <mat-option [value]="'Leal Bom'">Leal Bom</mat-option>
@@ -45,68 +45,68 @@
                         <h2>Modificadores</h2>
                     </mat-toolbar>
                     <mat-toolbar>
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Força</mat-label>
-                            <input matInput [(ngModel)]="modifc[0]" max="{{ maxMOd() }}" min="0" name="forca" type="number" value="">
+                            <input matInput [(ngModel)]="modifc[0]" max="20" min="0" name="forca" type="number" value="">
                         </mat-form-field> 
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Destreza</mat-label>
-                            <input matInput [(ngModel)]="modifc[1]" max="{{ maxMOd() }}" (input)="maxMOd()" min="0" name="destreza" type="number" value="">
+                            <input matInput [(ngModel)]="modifc[1]" max="20" min="0" name="destreza" type="number" value="">
                         </mat-form-field> 
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Constituição</mat-label>
-                            <input matInput [(ngModel)]="modifc[2]" max="{{ maxMOd() }}" (input)="maxMOd()" min="0" name="constituicao" type="number" value="">
+                            <input matInput [(ngModel)]="modifc[2]" max="20" min="0" name="constituicao" type="number" value="">
                         </mat-form-field>  
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Inteligência</mat-label>
-                            <input matInput [(ngModel)]="modifc[3]" max="{{ maxMOd() }}" (input)="maxMOd()" min="0" name="inteligencia" type="number" value="">
+                            <input matInput [(ngModel)]="modifc[3]" max="20" min="0" name="inteligencia" type="number" value="">
                         </mat-form-field> 
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Sabedoria</mat-label>
-                            <input matInput [(ngModel)]="modifc[4]" max="{{ maxMOd() }}" (input)="maxMOd()" min="0" name="sabedoria" type="number" value="">
+                            <input matInput [(ngModel)]="modifc[4]" max="20" min="0" name="sabedoria" type="number" value="">
                         </mat-form-field>
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Carisma</mat-label>
-                            <input matInput [(ngModel)]="modifc[5]" max="{{ maxMOd() }}" (input)="maxMOd()" min="0" name="carisma" type="number" value="">
+                            <input matInput [(ngModel)]="modifc[5]" max="20" min="0" name="carisma" type="number" value="">
                         </mat-form-field>
                     </mat-toolbar>
                     <mat-toolbar>
                         <h2>Características</h2>
                     </mat-toolbar>
                     <mat-toolbar>
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Idade</mat-label>
                             <input matInput max="99999" min="0" [(ngModel)]="carcN[0]" name="Idade" maxlength="5" type="number" value="">
                         </mat-form-field>
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Altura</mat-label>
                             <input matInput max="99999" min="0" [(ngModel)]="carcN[1]" name="Altura" maxlength="5" type="number" value="">
                         </mat-form-field>
-                        <mat-form-field class="input Number" appearance="fill">
+                        <mat-form-field class="input Number" appearance="outline">
                             <mat-label>Peso</mat-label>
                             <input matInput max="99999" [(ngModel)]="carcN[2]" name="Peso" min="0" maxlength="5" type="number" value="">
                         </mat-form-field>
                     </mat-toolbar>
                     <mat-toolbar>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Olhos</mat-label>
                             <input matInput [(ngModel)]="carcS[0]" name="olhos" maxlength="30" value="">
                         </mat-form-field>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Pele</mat-label>
                             <input matInput [(ngModel)]="carcS[1]" name="Pele" maxlength="30" value="">
                         </mat-form-field>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Cabelos</mat-label>
                             <input matInput [(ngModel)]="carcS[2]" name="Cabelos" maxlength="30" value="">
                         </mat-form-field>
                     </mat-toolbar>
                     <mat-toolbar>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>Características Personalizadas</mat-label>
                             <textarea matInput placeholder="Ex. Perna de pau, olho de vidro"></textarea>
                         </mat-form-field>
-                        <mat-form-field class="input" appearance="fill">
+                        <mat-form-field class="input" appearance="outline">
                             <mat-label>História do personagem</mat-label>
                             <textarea matInput placeholder="Ex. Já teve um amor hospitalar"></textarea>
                         </mat-form-field>
@@ -129,7 +129,7 @@
                 <h2>Equipamento</h2>
             </mat-toolbar>
             <mat-toolbar>
-                <mat-form-field class="input" appearance="fill">
+                <mat-form-field class="input" appearance="outline">
                     <mat-label>Selecione suas armas</mat-label>
                     <mat-select name="class">
                         <mat-option [value]="0">Um machado grande</mat-option>

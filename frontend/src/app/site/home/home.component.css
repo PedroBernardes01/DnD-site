@@ -13,13 +13,18 @@ mat-toolbar{
     align-items: center;
     padding-top: 40px;
     padding-bottom: 30px;
-    background-color: var(--prim);
+    background-color: var(--prim3);
     box-shadow: 0px -9px 50px #000000;
     min-height: 100%;
 }
 mat-toolbar-row{
     height: max-content;
     width: max-content;
+    margin-bottom: 30px;
+    display: flex;
+}
+mat-toolbar-row div{
+    color: var(--sec);
 }
 h1{
     text-align: center;
@@ -36,4 +41,8 @@ span{
 #dndEicon{
     width: 300px;
     height: 300px;
+}
+#dndbooks{
+    width: 300px;
+    height: 400px;
 }

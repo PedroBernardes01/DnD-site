@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pdfs.component.css']
 })
 export class PdfsComponent implements OnInit {
-  swt = 0
-  bordback = 'background-color: rgb(217, 33, 192)'
+  swt = 1
+  bordback = 'background-color: rgb(80, 130, 153)'
   linkPdf = '/assets/pdfsdnd5e/GM.pdf'
   
   constructor() { }
@@ -15,17 +15,17 @@ export class PdfsComponent implements OnInit {
   select(id: number){
     switch(id){
       case 0:
-        this.bordback = 'background-color: rgb(217, 33, 192);'
+        this.bordback = 'background-color: rgb(107, 74, 123);'
         this.swt = 0
         this.linkPdf = '/assets/pdfsdnd5e/GM.pdf'
         break;
       case 1:
-        this.bordback = 'background-color: rgb(51, 0, 255);'
+        this.bordback = 'background-color: rgb(80, 130, 153);'
         this.swt = 1
         this.linkPdf = '/assets/pdfsdnd5e/MM.pdf'
         break;
       case 2:
-        this.bordback = 'background-color: rgb(255, 177, 33);'
+        this.bordback = 'background-color: rgb(236, 135, 37);'
         this.swt = 2
         this.linkPdf = '/assets/pdfsdnd5e/LDJ.pdf'
         break;

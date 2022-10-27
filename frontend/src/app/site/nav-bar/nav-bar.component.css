@@ -2,7 +2,7 @@ mat-sidenav-container{
     width: 70px;
     position: fixed;
     left: 0;
-    background-color: var(--prim2);
+    background-color: var(--prim);
     height: 100%;
     z-index: 5;
 }
@@ -24,7 +24,7 @@ img{
     margin-bottom: 50px;
 }
 .prim{
-    background-color: var(--prim2);
+    background-color: var(--prim);
     color: var(--sec);
 }
 
@@ -44,9 +44,6 @@ mat-sidenav-container:hover{
     background: url(/assets/faisca.gif);
     background-repeat: no-repeat;
     background-size: cover;
-}
-mat-sidenav-container:hover .prim{
-    background-color: var(--prim);
 }
 mat-sidenav-container:hover button span{
     display: inline-block;

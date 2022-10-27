@@ -286,20 +286,6 @@ export class PersonagensComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  maxMOd(): number{
-    let maxn = 20
-    if( this.modifc[0] != null && this.modifc[1] != null && this.modifc[2] != null && this.modifc[3] != null && this.modifc[4] != null && this.modifc[5] != null){
-      if(this.modifc[0] + this.modifc[1] + this.modifc[2] + this.modifc[3] + this.modifc[4] + this.modifc[5] == 72){
-        maxn=20
-      }
-      else{
-        maxn = 0
-      } 
-    }
-    
-    return maxn;
-  }
-
   girarNvezes(nmaior: number, nmenor: number = 1, nvezes: number = 1): number[]{
     let n: number[] = []
     if(nmaior > nmenor){

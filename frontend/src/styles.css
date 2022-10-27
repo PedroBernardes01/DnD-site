@@ -8,10 +8,12 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
 :root{
     --family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --prim: rgb(244, 114, 1);
     --prim2: #ffbf00;
+    --prim3: #ffa135;
     --sec: #171717;
     --tam1: 0.5em;
     --tam2: 1em;
@@ -19,6 +21,20 @@ html, body {
     --tam4: 2em;
     --branco: #ffffff;
 }
+/*
+:root{
+    --family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --prim: #330000;
+    --prim2: #3c0000;
+    --prim3: #570000;
+    --sec: #c52323;
+    --tam1: 0.5em;
+    --tam2: 1em;
+    --tam3: 1.3em;
+    --tam4: 2em;
+    --branco: #ffffff;
+}*/
+
 button{
     border: 0;
     padding: 0;

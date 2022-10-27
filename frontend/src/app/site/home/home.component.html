@@ -5,6 +5,20 @@
                 <h1>O seu lugar de jogar DnD<br>com seus amigos totalmente gratis!</h1>
                 <span>Um espaço para jogar D&D, usar os pdfs,<br> e uma mesa (simples) gratis, sem <br> propragandas, crie sua ficha de <br> personagem e avance para as aventuras!</span>
             </div>
-            <img id="dndEicon" src="/assets/dndEicon.png" alt="">
+            <img [style]="dndicon" id="dndEicon" src="/assets/dndEicon.png" alt="">
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+            <a routerLink="PDFS"><img id="dndbooks" src="/assets/booksD&De5.png" alt=""></a>
+            <div>
+                <h1>Encontre o PDF que precisa!</h1>
+                <span>Não dá pra ter um MM inteiro na sua cabeça né,<br> consulte os pdfs e complemente sua aventura</span>
+            </div>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+            <div>
+                <h1>Crie seu personagem</h1>
+                <span>Nossa criação de personagem tenta ser da forma mais intuitiva possivel!<br>Crie seu personagem de forma que já fazemos alguns <br> calculos desnessessários e já ajeitamos o seu personagem <br> apenas selecionando sua raça e sua classe!</span>
+            </div>
+            <a routerLink="New/personagem"><img id="dndtaverna" src="/assets/rlfo.png" alt=""></a>
         </mat-toolbar-row>
 </mat-toolbar>
