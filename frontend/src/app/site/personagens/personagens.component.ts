@@ -22,7 +22,7 @@ export class PersonagensComponent implements OnInit {
           id: 1,
           nome: 'FÚRIA',
           nvl: 1,
-          desc:'Em batalha, você luta com uma ferocidade primitiva. Noseu turno, você pode entrar em fúria com uma açãobônus.Enquanto estiver em fúria, você recebe os seguintes benefícios se você não estiver vestindo uma armadura pesada: 1. Você tem vantagem em testes de Força e testes deresistência de Força.2. Quando você desferir um ataque com arma corpo-a-corpo usando Força, você recebe um bônus nas jogadas de dano que aumenta à medida que você adquire níveis de bárbaro, como mostrado na coluna Dano de Fúria na tabela O Bárbaro.3.  Você possui resistência contra dano de concussão,cortante e perfurante. Se você for capaz de conjurar magias, você não poderá conjurá-las ou se concentrar nelas enquanto estiver em fúria. Sua fúria dura por 1 minuto. Ela termina prematuramente se você cair inconsciente ou se seu turno acabar e você não tiver atacado nenhuma criatura hostil desde seu último turno ou não tiver sofrido dano nesse período. Você também pode terminar sua fúria no seu turno com uma ação bônus. Quando você tiver usado a quantidade de fúrias mostrada para o seu nível de bárbaro na coluna Fúrias da tabela O Bárbaro, você precisará terminar um descanso longo antes de poder entrar em fúria novamente.',
+          desc:'Em batalha, você luta com uma ferocidade primitiva. Noseu turno, você pode entrar em fúria com uma açãobônus.Enquanto estiver em fúria, você recebe os seguintes benefícios se você não estiver vestindo uma armadura pesada: 1. Você tem vantagem em testes de Força e testes de resistência de Força.2. Quando você desferir um ataque com arma corpo-a-corpo usando Força, você recebe um bônus nas jogadas de dano que aumenta à medida que você adquire níveis de bárbaro, como mostrado na coluna Dano de Fúria na tabela O Bárbaro.3.  Você possui resistência contra dano de concussão,cortante e perfurante. Se você for capaz de conjurar magias, você não poderá conjurá-las ou se concentrar nelas enquanto estiver em fúria. Sua fúria dura por 1 minuto. Ela termina prematuramente se você cair inconsciente ou se seu turno acabar e você não tiver atacado nenhuma criatura hostil desde seu último turno ou não tiver sofrido dano nesse período. Você também pode terminar sua fúria no seu turno com uma ação bônus. Quando você tiver usado a quantidade de fúrias mostrada para o seu nível de bárbaro na coluna Fúrias da tabela O Bárbaro, você precisará terminar um descanso longo antes de poder entrar em fúria novamente.',
           req: null,
         },
         {
@@ -182,7 +182,64 @@ export class PersonagensComponent implements OnInit {
           desc: 'Você pode falar, ler e escrever Comum e Anão. O idioma Anão é repleto de consoantes duras e sons guturais, e essa característica influencia, como um sotaque, qualquer outro idioma que o anão falar.' 
         },
       ]
-    }
+    },
+    {
+      id: 2,
+      nome: 'Elfo',
+      atributs: [0,2,0,0,0,0],
+      carac: [
+        {
+          id: 1,
+          nome: 'Aumento no Valor de Habilidade',
+          desc: 'Seu valor de Destreza aumenta em 2.' 
+        },
+        {
+          id: 2,
+          nome: 'Idade',
+          desc: 'Embora os elfos atinjam a maturidade física com praticamente a mesma idade dos humanos, a compreensão élfica da idade adulta vai além da maturidade física, abrangendo sua experiência sobre o mundo. Um elfo tipicamente assume a idade adulta e um nome adulto com cerca de 100 anos de idade e pode viver 750 anos.' 
+        },
+        {
+          id: 3,
+          nome: 'Tendência',
+          desc: 'Elfos amam a liberdade, a diversidade e a expressão pessoal, então eles inclinam-se forte e suavemente para aspectos do caos. Eles valorizam e protegem a liberdade dos outros como a sua própria, e são geralmente mais bondosos que o contrário. Os drow são exceção. Seu exílio no Subterrâneo fez deles perversos e perigosos. Drow são geralmente mais maus que o contrário.' 
+        },
+        {
+          id: 4,
+          nome: 'Tamanho',
+          desc: 'Elfos medem entre 1,50 a 1,80 metro de altura e possuem constituição delgada. Seu tamanho é Médio.' 
+        },
+        {
+          id: 5,
+          nome: 'Deslocamento',
+          desc: 'Seu deslocamento base de caminhada é 9 metros.' 
+        },
+        {
+          id: 6,
+          nome: 'Visão no Escuro',
+          desc: 'Acostumado às florestas crepusculares e ao céu noturno, você possui uma visão superior em condições de escuridão e na penumbra. Você pode enxergar na penumbra a até 18 metros como se fosse na luz plena, e no escuro como se fosse na  penumbra. Você não pode discernir cores no escuro, apenas tons de cinza.' 
+        },
+        {
+          id: 7,
+          nome: 'Sentidos Aguçados Você tem proficiência na perícia Percepção.',
+          desc: '' 
+        },
+        {
+          id: 8,
+          nome: 'Ancestral Feérico Você tem vantagem nos testes de resistência para resistir a ser enfeitiçado e magias não podem colocá-lo para dormir.',
+          desc: '' 
+        },
+        {
+          id: 9,
+          nome: 'Transe Elfos não precisam dormir. Ao invés disso, eles meditam profundamente, permanecendo semiconscientes, durante 4 horas por dia. (A palavra em idioma comum para tal meditação é "transe".) Enquanto medita, um elfo é capaz de sonhar de certo modo. Esses sonhos na verdade são exercícios mentais que se tornam reflexos através de anos de prática. Depois de descansar dessa forma, você ganha os mesmos benefícios que um humano depois de 8 horas de sono.',
+          desc: '' 
+        },
+        {
+          id: 10,
+          nome: 'Idiomas ',
+          desc: 'Você pode falar, ler e escrever Comum e Élfico. O Élfico é um idioma fluido, com entonações sutis e gramática complexa. A literatura élfica é rica e diversa, e suas canções e poemas são famosos entre outras raças. Muitos bardos aprendem essa língua para que possam adicionar canções élficas ao seu repertório.' 
+        },
+      ]
+    },
   ]
   equipamento = [
     {
@@ -229,6 +286,18 @@ export class PersonagensComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  girarNvezes(nmaior: number, nmenor: number = 1, nvezes: number = 1): number[]{
+    let n: number[] = []
+    if(nmaior > nmenor){
+      for(let I=0; I<nvezes; I++){
+        n = n.concat(this.girar(nmaior, nmenor))
+      }
+      return n
+    }
+    else{
+      return [0]
+    }
+  }
   girar(nmaior: number, nmenor: number = 1): number{
     if(nmaior > nmenor){
       let n: number
@@ -279,7 +348,23 @@ export class PersonagensComponent implements OnInit {
           'Dagnal', 'Diesa', 'Eldeth', 'Falkrunn', 'Gunnloda', 'Gurdis',
           'Helja', 'Hlin', 'Kathra', 'Kristryd', 'Ilde', 'Liftrasa', 'Mardred',
           'Riswynn', 'Sannl', 'Torbera', 'Torgga', 'Vistra']
-        this.carcN = [this.girar(350, 50),1.30,75]
+        this.carcN = [this.girar(750, 50),1.30,0.75]
+        break;
+        case 2:
+        tendencias = ['Leal Bom', 'Neutro Bom', 'Caótico Bom']
+        nomes = ['Adrie', 'Althaea',
+          'Anastrianna', 'Andraste', 'Antinua', 'Bethrynna', 'Birel',
+          'Caelynn', 'Drusilia', 'Enna', 'Felosial', 'Ielenia', 'Jelenneth',
+          'Keyleth', 'Leshanna', 'Lia', 'Meriele', 'Mialee', 'Naivara',
+          'Quelenna', 'Quillathe', 'Sariel', 'Shanairra', 'Shava',
+          'Silaqui', 'Theirastra', 'Thia', 'Vadania', 'Valanthe',
+          'Xanaphia', 'Adran', 'Aelar', 'Aramil',
+          'Arannis', 'Aust', 'Beiro', 'Berrian', 'Carric', 'Enialis', 'Erdan',
+          'Erevan', 'Galinndan', 'Hadarai', 'Heian', 'Himo', 'Immeral',
+          'Ivellios', 'Laucian', 'Mindartis', 'Paelias', 'Peren', 'Quarion',
+          'Riardon', 'Rolen', 'Soveliss', 'Thamior', 'Tharivol', 'Theren',
+          'Varis']
+        this.carcN = [this.girar(350, 50),1.70,1.90]
         break;
     }
     this.tendency = tendencias[this.girar(tendencias.length, 0)]
