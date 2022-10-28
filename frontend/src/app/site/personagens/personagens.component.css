@@ -22,7 +22,7 @@ body{
     margin-left: 70px;
     display: flex;
     flex-direction: column; 
-    background-color: var(--prim);
+    background-color: var(--prim3);
 }
 mat-toolbar{
     height: max-content;

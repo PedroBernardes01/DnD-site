@@ -13,13 +13,13 @@
                         <mat-form-field class="input" appearance="outline">
                             <mat-label>Selecione sua Classe</mat-label>
                             <mat-select name="class" [(ngModel)]="idClass" name="class">
-                                <mat-option *ngFor="let class of class" (click)="recmod(class.id)" [value]="class.id">{{ class.nome }}</mat-option>               
+                                <mat-option *ngFor="let class of classes" (click)="recmod(class.id)" [value]="class.id">{{ class.nome }}</mat-option>               
                             </mat-select>
                         </mat-form-field>
                         <mat-form-field class="input" appearance="outline">
                             <mat-label>Selecione sua Raça</mat-label>
                             <mat-select name="class">
-                                <mat-option *ngFor="let race of race" (click)="reccarc(race.id)" [value]="race.id">{{ race.nome }}</mat-option>                          
+                                <mat-option *ngFor="let race of races" (click)="reccarc(race.id)" [value]="race.id">{{ race.nome }}</mat-option>                          
                             </mat-select> 
                         </mat-form-field>
                         <mat-form-field class="input" appearance="outline">
@@ -129,11 +129,10 @@
                 <h2>Equipamento</h2>
             </mat-toolbar>
             <mat-toolbar>
-                <mat-form-field class="input" appearance="outline">
+                <mat-form-field class="input" appearance="fill">
                     <mat-label>Selecione suas armas</mat-label>
                     <mat-select name="class">
-                        <mat-option [value]="0">Um machado grande</mat-option>
-                        <mat-option [value]="1">Qualquer arma corpo a corpo</mat-option>            
+                        <mat-option *ngFor="let item of list"></mat-option>
                     </mat-select>
                 </mat-form-field>
                 <mat-form-field class="input" appearance="fill">

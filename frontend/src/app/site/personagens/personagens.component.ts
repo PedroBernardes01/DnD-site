@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PersonagensComponent implements OnInit {
   //CAMINHO PRIMITIVOA fúria queima no coração de cada bárbaro, umaqueimação que leva-os a grandeza. Bárbaros diferentes,no entanto, atribuem suas fúrias a fontes diferentes. Paraalguns, é um reservatório interno onde a dor, aflição eraiva são forjados numa fúria dura como aço. Outrosveem-na como uma bênção espiritual, uma dadiva de umtotem animal.CAMINHO DO FURIOSOPara alguns bárbaros, a fúria é um meio para um fim –esse fim é a violência. O Caminho do Furioso é umcaminho de fúria livre, entumecido em sangue. A medidaque você entra na fúria de um furioso, você vibra no caosda batalha, despreocupado com a sua própria saúde oubem-estar.FRENESIComeçando no momento que você escolhe esse caminho no3° nível, você pode entrar num frenesi quando estiver emfúria. Se você desejar, pela duração da sua fúria, vocêpode realizar um único ataque corpo-a-corpo com arma,com uma ação bônus, em cada um de seus turnos apósesse. Quando sua fúria acabar, você sofrerá um nível deexaustão (como descrito no apêndice A).FÚRIA INCONSCIENTEA partir do 6° nível, você não pode ser enfeitiçado ouamedrontado enquanto estiver em fúria. Se você estavaenfeitiçado ou amedrontado quando entrou em fúria, oefeito é suspenso pela duração da fúria.PRESENÇA INTIMIDANTEA partir do 10° nível, você pode usar sua ação paraamedrontar alguém com sua presença intimidante.Quando o fizer, escolha uma criatura que você possa ver a9 metros. Se a criatura puder ver ou ouvir você, ela deveser bem sucedida num teste de resistência de Sabedoria(CD igual a 8 + seu bônus de proficiência + seumodificador de Carisma) ou ficara com medo de você até ofim do seu próximo turno. Nos turnos seguintes, vocêpode usar sua ação para estender a duração desse efeitona criatura amedrontada até o início do seu próximoturno. Esse efeito termina se a criatura terminar seuturno fora da sua linha de visão ao a mais de 18 metrosde você. Se a criatura for bem sucedida no teste de resistência,você não poderá usar essa característica nessa criaturanovamente por 24 horas.RETALIAÇÃOA partir do 14° nível, quando você sofrer dano de umacriatura que esteja a até 1,5 metro de você, você pode usarsua reação para realizar um ataque corpo-a-corpo comarma contra essa criatura.CAMINHO DO GUERREIRO TOTÊMICOO Caminho do Guerreiro Totêmico é uma jornadaespiritual, à partir do momento que o bárbaro aceita umespirito animal como seu guia, protetor e inspiração. Embatalha, seu espirito totêmico preenche você com forçasobrenatural, adicionando combustível mágico a sua fúriabárbara.A maioria das tribos bárbaras consideram que umanimal totêmico possui parentesco a um clã emparticular. Em tais casos, é incomum a um indivíduopossuir mais de um espirito animal totêmico, apesar deexistirem exceções.CONSELHEIRO ESPIRITUALSeu caminho é buscar a sintonia com o mundo natural,concedendo a você uma afinidade com as bestas. A partirdo 3° nível, quando você toma esse caminho, você recebe ahabilidade de conjurar as magias sentido bestial e falarcom animais, mas apenas na forma de rituais, comodescrito no capítulo 10.TOTEM ESPIRITUALA partir do 3° nível, quando você adota esse caminho,você escolhe um totem espiritual e ganha suascaracterísticas. Você deve fazer ou adquirir um objetofísico como totem – um amuleto ou adorno similar – queincorpora o pelo ou penas, garras, dente ou ossos doanimal totêmico. Se você quiser, você também adquirepequenos atributos físicos que o assemelham ao seu totemespiritual. Por exemplo, se você tiver o totem espiritual dourso, você seria incomumente peludo e de pele grossa, ouse o seu totem for a águia, seu olhos teriam um brilhoamarelado.Seu totem animal deve ser um animal relacionado aoslistados aqui, mas pode ser um mais apropriado a suaterra natal. Por exemplo, você poderia escolher falcão ouabutre ao invés de águia.Águia. Quando estiver em fúria e não estiver vestindouma armadura pesada, as outras criaturas terãodesvantagem nas jogadas de ataque de oportunidadecontra você e você pode usar a ação de Disparada comouma ação bônus no seu turno. O espirito da águia tornavocê um predador que pode vagar pelo meio da briga comfacilidade.Lobo. Quando estiver em fúria, seus amigos temvantagem nas jogadas de ataque corpo-a-corpo realizadascontra qualquer criatura a 1,5 metro de você que sejahostil a você. O espirito do lobo transforma você em umlíder de caça.Urso. Quando em fúria, você adquire resistência atodos os tipos de dano, exceto dano psíquico. O espirito dourso torna você vigoroso o suficiente para permanecer depé diante de qualquer castigo.ASPECTO DA BESTANo 6° nível, você adquire um benefício místico baseado nototem que você escolheu. Você pode escolher o mesmoanimal que selecionou no 3° nível ou um diferente.Águia. Você ganha a visão aguçada de uma águia.Você pode ver a até 1,6 km sem dificuldade, sendo capazde discernir até os menores detalhes quando estiverolhando para algo a menos de 30 metros de você. Alémdisso, penumbra não impõem desvantagem nos seustestes de Sabedoria (Percepção).Lobo. Você ganha a sensibilidade predatória de umlobo. Você pode rastrear outras criaturas quando estiverviajando a passo rápido e você pode se moverfurtivamente quando estiver viajando a passo normal(veja o capítulo 8 para as regras de passo de viagem).Urso. Você ganha a força de um urso. Sua capacidadede carga (incluindo carga máxima e capacidade de erguer)é dobrada e você tem vantagem em testes de Forçarealizados para empurrar, puxar, erguer ou quebrarobjetos.ANDARILHO ESPIRITUALNo 10° nível, você pode conjurar a magia comunhão com anatureza, mas apenas como um ritual. Quando o fizer,uma versão espiritual de um dos animais que vocêescolheu como Totem Espiritual ou Aspecto da Bestaaparece para você para transmitir a informação que vocêbusca.SINTONIA TOTÊMICANo 14° nível, você ganha um benefício magico baseado emum totem animal, à sua escolha. Você pode escolher omesmo animal que selecionou anteriormente ou umdiferente.Águia. Quando estiver em fúria, você adquire umdeslocamento de voo igual ao seu deslocamento decaminhada. Esse benefício funciona apenas em pequenosexplosões: você cai se terminar seu turno no ar e não tivernada em que possa se agarrar.Lobo. Quando estiver em fúria, você pode usar umaação bônus no seu turno para derrubar uma criaturaGrande ou menor no chão quando você atingi-la com umataque corpo-a-corpo com arma.Urso. Quando estiver em fúria, qualquer criatura aaté 1,5 metro de você que for hostil a você terádesvantagem nas jogadas de ataque contra outros alvosalém de você ou outro personagem com essacaracterística. Um inimigo é imune a esse efeito se elenão puder ver ou ouvir você ou caso ele não possa seramedrontado.
   //objetos
-  class = [
+  classes = [
     {
       id: 1,
       class: 0, //0 tank, 1 dps, 2 support
@@ -116,11 +116,13 @@ export class PersonagensComponent implements OnInit {
           desc:'No 20° nível, você incorpora os poderes da natureza. Seusvalores de Força e Constituição aumentam em 4. Seumáximo para esses valores agora é 24.',
           req: null,
         }
-      ]
+      ],
+      Arma1: [0],
+      Arma2: [1],
     }
   ]
 
-  race = [
+  races = [
     {
       id: 1,
       nome: 'Anão',
@@ -241,19 +243,39 @@ export class PersonagensComponent implements OnInit {
       ]
     },
   ]
-  equipamento = [
+  equipamentos = [
     {
       id: 0,
-      nome: 'TEMPLATE',
+      nome: 'Machado Grande',
       desc: '',
-      preco: [0, 0],
-      peso: '',
-      qunat: 0,
+      preco: [30, 3],
+      peso: 3.5,
+      qunat: 1,
+      type: 0, //type 0: Arma, type 1: Armadura, type 2: Escudo, type 3: equipamento
+      //type 0 - Arma
+      tipoArm: 'Cortante',
+      PropriedArm: 'Pesada, duas mãos',
+      dadDAnoArm: [0,0,0,0,1,0],
+      bonusDanArm: 0,
+      //type 1 - Armadura 
+      CA: 0,
+      forcMin: 0,
+      desvFurt: 0,
+      //atributo
+      atrib: 0,
+    },
+    {
+      id: 1,
+      nome: 'Machadinha',
+      desc: '',
+      preco: [5, 3],
+      peso: 1.0,
+      qunat: 1,
       type: 0,
       //type 0 - Arma
-      tipoArm: '',
-      PropriedArm: '',
-      dadDAnoArm: [0,0,0,0,0,0],
+      tipoArm: 'Cortante',
+      PropriedArm: 'Leve, arremesso (distância 6/18)',
+      dadDAnoArm: [0,1,0,0,0,0],
       bonusDanArm: 0,
       //type 1 - Aramdura 
       CA: 0,
@@ -280,6 +302,8 @@ export class PersonagensComponent implements OnInit {
   idClass = 0
   tendency!:string
   enable = true
+  eq1 = []
+  eq2 = []
 
   constructor() {}
 
@@ -371,7 +395,7 @@ export class PersonagensComponent implements OnInit {
     this.nome = nomes[this.girar(nomes.length, 0)]
   }
   cadas(): void{
-
+    let q1 = this.class.filter(el => el.id == )
     this.Move(0)
   }
 }
