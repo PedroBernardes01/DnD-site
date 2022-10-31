@@ -395,7 +395,6 @@ export class PersonagensComponent implements OnInit {
     this.nome = nomes[this.girar(nomes.length, 0)]
   }
   cadas(): void{
-    let q1 = this.class.filter(el => el.id == )
     this.Move(0)
   }
 }
