@@ -24,10 +24,10 @@ html, body {
 /*
 :root{
     --family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --prim: #330000;
-    --prim2: #3c0000;
-    --prim3: #570000;
-    --sec: #c52323;
+    --prim: #000000;
+    --prim2: #ecb100;
+    --prim3: #925816;
+    --sec: #f5dc8c;
     --tam1: 0.5em;
     --tam2: 1em;
     --tam3: 1.3em;
@@ -41,8 +41,7 @@ button{
     background: none;
 }
 .buttonBun{
-    border: 1px solid var(--sec);
-    min-height: 60px;
+    border: 2px solid var(--prim3);
+    background-color: var(--prim2);
     color: var(--sec);
-    font-size: var(--tam2);
 }

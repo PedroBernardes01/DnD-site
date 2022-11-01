@@ -1,6 +1,5 @@
-import { NavBarComponent } from './../nav-bar/nav-bar.component';
-import { environment } from './../../../environments/environment';
 import { Component, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +8,11 @@ import { Component, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   
-  constructor() { }
+  constructor(private router: Router) { }
+  
+  goto(rout: string): void {
+    this.router.navigate([rout])
+  }
 
   ngOnInit(): void {
   }
