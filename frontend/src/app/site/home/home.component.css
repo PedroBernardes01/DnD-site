@@ -24,7 +24,7 @@ mat-toolbar-row{
     display: flex;
 }
 mat-toolbar-row div{
-    color: var(--sec);
+    color: var(--sec2);
 }
 h1{
     text-align: center;

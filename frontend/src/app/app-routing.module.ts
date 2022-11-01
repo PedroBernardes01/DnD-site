@@ -6,6 +6,7 @@ import { HomeComponent } from './site/home/home.component';
 import { PdfsComponent } from './site/pdfs/pdfs.component';
 import { PersonagensComponent } from './site/personagens/personagens.component';
 import { LoginComponent } from './site/login/login.component';
+import { CadastroComponent } from './site/cadastro/cadastro.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: "login",
     component: LoginComponent
+  },
+  {
+    path: "cadastro",
+    component: CadastroComponent
   },
   {
     path: "New/personagem",

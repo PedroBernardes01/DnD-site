@@ -12,11 +12,18 @@
           </mat-error>
         </mat-form-field>
         <mat-form-field appearance="standard">
+            <mat-label>Nome</mat-label>
+            <input type="Password" [formControl]="senhaFormControl" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
             <mat-label>Senha</mat-label>
             <input type="Password" [formControl]="senhaFormControl" matInput>
         </mat-form-field>
-        <button mat-button >Entrar</button>
-        <button mat-button (click)="goto('/cadastro')">Não tenho uma conta</button>
-        <button mat-button >Esqueci a senha</button>
+        <mat-form-field appearance="standard">
+            <mat-label>Confirmar Senha</mat-label>
+            <input type="Password" [formControl]="senhaFormControl" matInput>
+        </mat-form-field>
+        <button mat-button >Criar conta</button>
+        <button mat-button >Já tenho uma conta</button>
       </form>
 </body>

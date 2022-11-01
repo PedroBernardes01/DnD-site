@@ -41,9 +41,6 @@ img{
 }
 mat-sidenav-container:hover{
     width: 400px;
-    background: url(/assets/faisca.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 mat-sidenav-container:hover button span{
     display: inline-block;
