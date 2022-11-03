@@ -1,22 +1,22 @@
 <body>
-    <form>
-        <h1>Login</h1>
-        <mat-form-field appearance="standard">
-          <mat-label>E-mail</mat-label>
-          <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
-          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-            E-mail Invalido
-          </mat-error>
-          <mat-error *ngIf="emailFormControl.hasError('required')">
-            Campo Obrigatório
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="standard">
-            <mat-label>Senha</mat-label>
-            <input type="Password" [formControl]="senhaFormControl" matInput>
-        </mat-form-field>
-        <button mat-button >Entrar</button>
-        <button mat-button (click)="goto('/cadastro')">Não tenho uma conta</button>
-        <button mat-button >Esqueci a senha</button>
-      </form>
+  <form>
+    <h1>Login</h1>
+    <mat-form-field appearance="standard">
+      <mat-label>E-mail</mat-label>
+      <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        E-mail Invalido
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Campo Obrigatório
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="standard">
+      <mat-label>Senha</mat-label>
+      <input type="Password" [formControl]="senhaFormControl" matInput>
+    </mat-form-field>
+    <button mat-button>Entrar</button>
+    <button mat-button (click)="goto('/cadastro')">Não tenho uma conta</button>
+    <button mat-button>Esqueci a senha</button>
+  </form>
 </body>

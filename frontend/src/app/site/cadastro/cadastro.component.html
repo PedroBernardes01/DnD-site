@@ -1,29 +1,22 @@
 <body>
-    <form>
-        <h1>Login</h1>
-        <mat-form-field appearance="standard">
-          <mat-label>E-mail</mat-label>
-          <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
-          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-            E-mail Invalido
-          </mat-error>
-          <mat-error *ngIf="emailFormControl.hasError('required')">
-            Campo Obrigatório
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="standard">
-            <mat-label>Nome</mat-label>
-            <input type="Password" [formControl]="senhaFormControl" matInput>
-        </mat-form-field>
-        <mat-form-field appearance="standard">
-            <mat-label>Senha</mat-label>
-            <input type="Password" [formControl]="senhaFormControl" matInput>
-        </mat-form-field>
-        <mat-form-field appearance="standard">
-            <mat-label>Confirmar Senha</mat-label>
-            <input type="Password" [formControl]="senhaFormControl" matInput>
-        </mat-form-field>
-        <button mat-button >Criar conta</button>
-        <button mat-button >Já tenho uma conta</button>
-      </form>
+  <form>
+    <h1>Login</h1>
+    <mat-form-field appearance="standard">
+      <mat-label>E-mail</mat-label>
+      <input type="email" [(ngModel)]="user.email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+    </mat-form-field>
+    <mat-form-field appearance="standard">
+      <mat-label>Nome</mat-label>
+      <input type="text" [(ngModel)]="user.name" [formControl]="senhaFormControl" matInput>
+    </mat-form-field>
+    <div>
+      <mat-form-field class="sen" appearance="standard">
+        <mat-label>Senha</mat-label>
+        <input type="{{senV}}" [(ngModel)]="user.password" [formControl]="senhaFormControl" matInput>
+      </mat-form-field>
+      <button mat-button class="eye" (click)="vis()"><i class="material-icons">{{eye}}</i></button>
+    </div>
+    <button mat-button class="btn" (click)="cadas()">Criar conta</button>
+    <button mat-button class="btn" (click)="goto('/login')">Já tenho uma conta</button>
+  </form>
 </body>
