@@ -1,8 +1,8 @@
+import { AllService } from './../BD/all.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { user } from './../BD/user.model';
-import { AllService } from './../BD/all.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -15,6 +15,9 @@ export class CadastroComponent implements OnInit {
   senhaFormControl = new FormControl('', [Validators.required, Validators.minLength(8)]);
   senV = 'password'
   eye = 'visibility_off'
+  verEmail: boolean = false
+
+  users!: user[]
 
   user: user = {
     name: '',
@@ -22,7 +25,7 @@ export class CadastroComponent implements OnInit {
     password: ''
   }
 
-  constructor(private router: Router, private service: AllService) { }
+  constructor(private router: Router, private srvc: AllService) { }
 
   ngOnInit(): void {
   }
@@ -45,5 +48,18 @@ export class CadastroComponent implements OnInit {
   }
 
   cadas(): void {
+      this.verEmail = false
+      this.srvc.getUser().subscribe((user)=>{
+      this.users = user
+      for(let I=0; I<user.length; I++){
+        if(this.users[I].email.toLowerCase() == this.user.email.toLowerCase())
+          this.verEmail = true
+      }
+      if(this.verEmail == false){
+        this.srvc.postUser(this.user).subscribe(()=>{
+          this.goto('/login')
+        })
+      }
+    })
   }
 }

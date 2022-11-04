@@ -16,4 +16,7 @@ export class AllService {
   postUser(User: user): Observable<user> {
     return this.http.post<user>(this.baseUrluser, User)
   }
+  getUser(): Observable<user[]> {
+    return this.http.get<user[]>(this.baseUrluser)
+  }
 }

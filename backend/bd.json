@@ -1,10 +1,16 @@
 {
-    "user": [
-        {
-            "name": "TEMPLATE",
-            "email": "TEMPLATE@EMAIL.COM",
-            "password": "TEMPLATE",
-            "id": 0
-        }
-    ]
+  "user": [
+    {
+      "name": "TEMPLATE",
+      "email": "TEMPLATE@EMAIL.COM",
+      "password": "TEMPLATE",
+      "id": 0
+    },
+    {
+      "name": "kctinho01",
+      "email": "pedrokc55@outlook.com",
+      "password": "kctinho01",
+      "id": 1
+    }
+  ]
 }
